@@ -1,0 +1,10 @@
+////////////////////////////////
+//tuteliamoci
+
+'use strict';
+
+console.log('sono collegato al doc html');
+
+//tuteliamoci
+////////////////////////////////
+
