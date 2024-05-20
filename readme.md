@@ -1,3 +1,5 @@
+Readme dell'esercizio e una bozza delle soluzioni applicate inizialmente
+
 Ciao ragazzi,
 esercizio di oggi: calcolo del prezzo del biglietto del treno
 cartella/repo: js-biglietto-treno

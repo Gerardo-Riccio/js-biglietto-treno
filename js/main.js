@@ -8,6 +8,9 @@ console.log('sono collegato al doc html');
 // //tuteliamoci
 ////////////////////////////////
 
+
+
+
 ////////////////////////////////
 //domande per l'utente
 //numero di passeggeri
@@ -15,17 +18,14 @@ const NumeroDeiPasseggeri = parseInt(Number(prompt('Per quante persone vuole pre
 // //numero di passeggeri
 
 // presenza di minorenni
-
 const SeSonoPresentiMinorenni = String(prompt('Sono presenti minorenni? (si o no)'));
 let NumeroDeiMinorenni = 0;
 
 if (SeSonoPresentiMinorenni === 'si') {
     NumeroDeiMinorenni = parseInt(Number(prompt('Quanti di questi passeggeri sono minorenni?')));
 } else {
-    NumeroDeiMinorenni = 0;
-}
+    NumeroDeiMinorenni = 0;}
 // //presenza di minorenni
-
 
 // presenza di over65
 const SeSonoPresentiOver65 = String(prompt('Sono presenti Over65? (si o no)'));
@@ -37,7 +37,6 @@ if (SeSonoPresentiOver65 === 'si') {
 }
 // //presenza di over65
 
-
 // Km da percorrere
 const KmDaPercorrere = parseInt(Number(prompt('Quanti Kilometri vuole percorrere?')));
 // //Km da percorrere
@@ -47,9 +46,7 @@ const KmDaPercorrere = parseInt(Number(prompt('Quanti Kilometri vuole percorrere
 
 
 
-
-
-
+////////////////////////////////
 // Calcolare Prezzo finale
 let CostoPerPersonaInBaseAiKilometri = (KmDaPercorrere * 0.21)
 let CostoPerPiuPersone = (CostoPerPersonaInBaseAiKilometri * NumeroDeiPasseggeri)
@@ -80,8 +77,11 @@ if (NumeroDegliOver65 !== 0) {
         //TOTALE:
 let totale = (CostoPerPiuPersone - CostoScontatoPerTuttiIMinorenniPresenti - CostoScontatoPerTuttiIOver65Presenti);
 // //Calcolare Prezzo finale
+////////////////////////////////
 
 
+
+////////////////////////////////
 // INIZIO - operazioni di eliminazione dei numeri dopo la virgola (massimo due decimali, per indicare centesimi sul prezzo.)
 // INIZIO - Prezzo Totale)
 totale = totale.toString();  // conversione numero in stringa
@@ -132,8 +132,7 @@ totale = parseFloat(numero);   // riconversione stringa in numero
         }
         //// Fine - blocco preso da https://www.mrw.it/javascript/gestione-numeri-decimali-javascript_7048.html
     CostoScontatoPerSingoloMinorenne = parseFloat(numero);   // riconversione stringa in numero      
-    // FINE Parte1 - per singolo Minorenne
-    
+    // FINE Parte1 - per singolo Minorenne    
     // INIZIO Parte2 - Totale Minorenni
     CostoScontatoPerTuttiIMinorenniPresenti = CostoScontatoPerTuttiIMinorenniPresenti.toString();  // conversione numero in stringa
         //// Inizio - blocco preso da https://www.mrw.it/javascript/gestione-numeri-decimali-javascript_7048.html
@@ -209,11 +208,13 @@ totale = parseFloat(numero);   // riconversione stringa in numero
         //// Fine - blocco preso da https://www.mrw.it/javascript/gestione-numeri-decimali-javascript_7048.html
     CostoScontatoPerTuttiIOver65Presenti = parseFloat(numero);   // riconversione stringa in numero    
     // FINE Parte2 - Totale Over65
-
 // FINE - Prezzo Over65)
 // FINE - operazioni di eliminazione dei numeri dopo la virgola (massimo due decimali, per indicare centesimi sul prezzo.)
+////////////////////////////////
 
 
+
+////////////////////////////////
         //Visualizzazione in HTML:
 document.getElementById('DatiGenerali').innerHTML=
 `
@@ -244,8 +245,6 @@ if (NumeroDegliOver65 !== 0) {
 }
 
 
-
-
 document.getElementById('TotalePrezzo').innerHTML=
 `
 ----------------------------------------
@@ -254,9 +253,6 @@ Importo totale dei biglietti : ${totale} Euro
 `;
 
 
-
         // //Visualizzazione in HTML:
-
-
-//ps: verificare se occorre la virgola in alcuni numeri che l'utente specifica
+////////////////////////////////
 
